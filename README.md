@@ -39,3 +39,13 @@
 
 11. Pilihan Menggunakan CheckBox dengan Perhitungan Otomatis
 ![Step11](SS/SS11.png)
+
+<b>Pertanyaan dan Tugas</b>
+
+1. Buat Script Untuk Melakukan Validasi Pada Isian Form </br>
+Menggunakan Alert Box Untuk Mengingatkan User Untuk Mengisi Semua Kolom
+![Step12](SS/SS12.png)
+Pada Kolom Email Menggunakan Type Input Email, Sehingga User Harus Menginput Email yang Valid.
+![Step13](SS/SS13.png)
+Terakhir Mengisi Semua Kolom
+![Step14](SS/SS14.png)
