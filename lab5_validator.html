@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Form Validator</title>
+    <style>
+        form p > label {
+            display: inline-block;
+            width: 100px;
+        }
+        form input[type="text"], form textarea {
+            border: 1.5px solid #083AA9;
+        }
+        form input[type="submit"] {
+            border: 1px solid #083AA9;
+            background-color: #083AA9;
+            color: #ffffff;
+            font-weight: bold;
+            padding: 5px 15px;
+        }
+        form input[type='radio']:checked:after {
+            width: 10px;
+            height: 10px;
+            border-radius: 15px;
+            top: -2px;
+            left: -1px;
+            position: relative;
+            background-color: #083AA9;
+            content: '';
+            display: inline-block;
+            visibility: visible;
+            border: 2px solid white;
+        }
+        </style>
+</head>
+<body>
+    <header>
+        <h1>Form Validator Praktikum 5</h1>
+    </header>
+    <form name="formPendaftaran" action="daftar.php" method="post" onsubmit="return validateForm()">
+        <fieldset>
+            <legend>Data Mahasiswa</legend>
+            <p>
+                <label for="nama">Nama Lengkap</label>
+                <input type="text" id="nama" name="nama" placeholder="Nama Lengkap">
+            </p>
+            <p>
+                <label for="nim">NIM</label>
+                <input type="text" id="nim" name="nim" placeholder="NIM">
+            </p>
+            <p>
+                <label for="email">Email</label>
+                <input type="email" id="email" name="email" placeholder="nama@mhs.pelitabangsa.ac.id">
+            </p>
+            <p>
+                <label>Jenis Kelamin</label>
+                <input type="radio" name="jenis_kelamin" value="laki-laki" checked>
+                <label>Laki-laki</label>
+                <input type="radio" name="jenis_kelamin" value="perempuan">
+                <label>Perempuan</label>
+            </p>
+            <p>
+                <label>Program Studi</label>
+                <select name="PilihJurusan">
+                    <option value="TIN">Teknik Industri</option>
+                    <option value="TI">Teknik Informatika</option>
+                    <option value="TL">Teknik Lingkungan</option>
+                    <option value="TS">Teknik Sipil</option>
+                    <option value="THP">Teknologi Hasil Pertanian</option>
+                </select>
+            </p>
+            <p>
+                <label>Agama</label>
+                <select name="Agama">
+                    <option value="hindu">Hindu</option>
+                    <option value="islam">Islam</option>
+                    <option value="katolik">Katolik</option>
+                    <option value="protestan">Protestan</option>
+                    <option value="buddha">Buddha</option>
+                </select>
+            </p>
+            <p><input type="submit" value="Submit"></p>
+        </fieldset>
+    </form>
+    <script>
+    function validateForm() {
+        if (document.forms["formPendaftaran"]["nama"].value == "") {
+            alert("Nama Tidak Boleh Kosong");
+            document.forms["formPendaftaran"]["nama"].focus();
+            return false;
+        }
+        if (document.forms["formPendaftaran"]["nim"].value == "") {
+            alert("NIM Tidak Boleh Kosong");
+            document.forms["formPendaftaran"]["nim"].focus();
+            return false;
+        }
+        if (document.forms["formPendaftaran"]["email"].value == "") {
+            alert("Email Tidak Boleh Kosong");
+            document.forms["formPendaftaran"]["email"].focus();
+            return false;
+        }
+        if (document.forms["formPendaftaran"]["jenis_kelamin"].value == "") {
+            alert("Pilih Jenis Kelamin");
+            document.forms["formPendaftaran"]["jenis_kelamin"].focus();
+            return false;
+        }
+        if (document.forms["formPendaftaran"]["PilihJurusan"].selectedIndex < 1) {
+            alert("Pilih Jurusan");
+            document.forms["formPendaftaran"]["PilihJurusan"].focus();
+            return false;
+        }
+        if (document.forms["formPendaftaran"]["Agama"].selectedIndex < 1) {
+            alert("Pilih Agama");
+            document.forms["formPendaftaran"]["Agama"].focus();
+            return false;
+        }
+    }
+</script>
+</body>
+</html>
