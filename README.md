@@ -16,3 +16,5 @@
 ![Step3](SS/SS3.png)
 4. Pemakaian Prompt
 ![Step4](SS/SS4.png)
+5. Pembuatan Fungsi dan Cara Pemanggilannya
+![Step5](SS/SS5.png)
