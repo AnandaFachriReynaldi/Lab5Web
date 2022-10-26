@@ -27,3 +27,8 @@
 ![Step7](SS/SS7.png)
 8. Penggunaan Operator Switch Untuk Seleksi Kondisi
 ![Step8](SS/SS8.png)
+
+<b>Pembuatan Form</b>
+
+9. Form Input
+![Step9](SS/SS15.png)
