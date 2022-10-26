@@ -12,3 +12,5 @@
 
 2. Pemakaian Alert Sebagai Property Window
 ![Step2](SS/SS2.png)
+3. Pemakaian Method Dalam Objek
+![Step3](SS/SS3.png)
