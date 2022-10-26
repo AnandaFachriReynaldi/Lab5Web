@@ -34,3 +34,8 @@
 ![Step9](SS/SS15.png)
 10. Form Button
 ![Step10](SS/SS10.png)
+
+<b>HTML DOM</b>
+
+11. Pilihan Menggunakan CheckBox dengan Perhitungan Otomatis
+![Step11](SS/SS11.png)
