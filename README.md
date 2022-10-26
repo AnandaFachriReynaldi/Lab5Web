@@ -14,3 +14,5 @@
 ![Step2](SS/SS2.png)
 3. Pemakaian Method Dalam Objek
 ![Step3](SS/SS3.png)
+4. Pemakaian Prompt
+![Step4](SS/SS4.png)
