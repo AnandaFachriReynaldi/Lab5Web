@@ -23,3 +23,5 @@
 
 6. Operasi Dasar Aritmatika
 ![Step6](SS/SS6.png)
+7. Seleksi Kondisi (if..else)
+![Step7](SS/SS7.png)
