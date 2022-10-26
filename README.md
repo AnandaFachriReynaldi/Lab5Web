@@ -18,3 +18,8 @@
 ![Step4](SS/SS4.png)
 5. Pembuatan Fungsi dan Cara Pemanggilannya
 ![Step5](SS/SS5.png)
+
+<b>Dasar Pemrograman di JavaScript</b>
+
+6. Operasi Dasar Aritmatika
+![Step6](SS/SS6.png)
